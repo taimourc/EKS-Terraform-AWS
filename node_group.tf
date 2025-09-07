@@ -1,5 +1,5 @@
 resource "aws_eks_node_group" "default" {
-  cluster_name    = aws_eks_cluster.this.name
+  cluster_name    = aws_eks_cluster.eks_cluster.name
   node_group_name = "default"
   node_role_arn   = aws_iam_role.eks_node.arn
   subnet_ids      = [for s in aws_subnet.public : s.id]

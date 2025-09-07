@@ -1,13 +1,9 @@
 output "cluster_endpoint" {
-  description = "EKS API server endpoint"
-  value       = aws_eks_cluster.this.endpoint
+  value = aws_eks_cluster.eks_cluster.endpoint
 }
-
 output "cluster_name" {
-  value = aws_eks_cluster.this.name
+  value = aws_eks_cluster.eks_cluster.name
 }
-
 output "cluster_certificate_authority" {
-  description = "Base64 cluster CA data"
-  value       = aws_eks_cluster.this.certificate_authority[0].data
+  value = aws_eks_cluster.eks_cluster.certificate_authority[0].data
 }
