@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 env:
-  PLAN_BUCKET: plan-bucket-zaf
+  PLAN_BUCKET: plan-bucket-taim
   # Optional TF backend flags if not in code:
   # TF_BACKEND_CONFIG: "-backend-config=bucket=my-tf-state-bucket -backend-config=key=terraform.tfstate -backend-config=region=us-east-1 -backend-config=dynamodb_table=my-tf-locks"
 

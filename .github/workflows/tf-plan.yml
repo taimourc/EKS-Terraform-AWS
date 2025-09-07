@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 env:
-  PLAN_BUCKET: plan-bucket-zaf
+  PLAN_BUCKET: plan-bucket-taim
   PLAN_PREFIX: ${{ github.repository }}#${{ github.sha }}   # e.g. org/repo#<sha>
   # Optional if you don't hardcode backend in *.tf:
   # TF_BACKEND_CONFIG: "-backend-config=bucket=my-tf-state-bucket -backend-config=key=terraform.tfstate -backend-config=region=us-east-1 -backend-config=dynamodb_table=my-tf-locks"

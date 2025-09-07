@@ -25,7 +25,7 @@ permissions:
 
 env:
   AWS_REGION: us-east-1
-  PLAN_BUCKET: plan-bucket-zaf
+  PLAN_BUCKET: plan-bucket-taim
   # Folder prefix style: org/repo#sha  (same convention as your plan/apply flow)
   PLAN_PREFIX: ${{ github.repository }}#${{ github.sha }}
   # Keep destroy plans separate from normal plans
